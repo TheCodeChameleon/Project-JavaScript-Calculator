@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "digital";
+    src: url("fonts/digital-7.ttf") format("truetype");
+}
+
+body{
+    font-family: "digital";
+    background-color: #4b0082;
+}
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "dis dis dis dis"
+        "AC C div times"
+        "seven eight nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal";
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 10px;
+}
+
+.padButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    background-color: gray;
+    border: black 1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.padButton:hover{
+    border: 1px solid white;
+    color: #ccc;
+}
+
+.dis {
+    grid-area: dis;
+    background-color: rgb(84, 131, 62);
+    text-align: right;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 10px 5px
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.dark-gray {
+    background-color: #333;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+.blue {
+    background-color: #5599ff;
+}
+
+.dis input{
+    background-color: rgb(84, 131, 62);
+    color: black;
+    padding: 5px 20px;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    font-family: "digital";
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    color: #ffff00;
+}
+
+.total{
+    margin-right: 10px;
+}
