@@ -7,6 +7,7 @@
     src: url("fonts/digital-7.ttf") format("truetype");
 }
 
+
 body{
     font-family: "digital";
     background-color: #4b0082;
@@ -33,6 +34,7 @@ body{
     background-color: black;
     border: 10px black solid;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .padButton {
@@ -101,6 +103,11 @@ body{
     margin: 20px;
     font-size: 20px;
     color: #ffff00;
+}
+
+.footer a{
+    color: #ffff00;
+    text-decoration: none;
 }
 
 .total{
